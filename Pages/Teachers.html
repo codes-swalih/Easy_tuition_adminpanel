@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-64 h-screen bg-gray-800 text-white">
+            <div class="p-6 text-center text-2xl font-bold">
+                Admin Panel
+            </div>
+            <nav class="mt-10">
+                <a href="../index.html" class="block py-2.5 px-4 rounded hover:bg-gray-700">
+                    Dashboard
+                </a>
+                <a href="students.html" class="block py-2.5 px-4 rounded hover:bg-gray-700">
+                    Students
+                </a>
+                <a href="teachers.html" class="block py-2.5 px-4 rounded hover:bg-gray-700">
+                    Teachers
+                </a>
+                <a href="/Pages/Pending-Payments.html" class="block py-2.5 px-4 rounded hover:bg-gray-700">
+                    Pending Payments
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main content -->
+        <div class="p-6">
+            <h1 class="text-2xl font-semibold mb-4">Teachers Verification</h1>
+            <div id="teachers-container" class="space-y-4">
+                <!-- Teachers will be loaded here -->
+            </div>
+        </div>
+
+    <script type="module" src="../js/teachers.js"></script>
+</body>
+</html>

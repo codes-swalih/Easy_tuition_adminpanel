@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-64 h-screen bg-gray-800 text-white">
+            <div class="p-6 text-center text-2xl font-bold">
+                Admin Panel
+            </div>
+            <nav class="mt-10">
+                <a href="index.html" class="block py-2.5 px-4 rounded hover:bg-gray-700">
+                    Dashboard
+                </a>
+                <a href="Pages/students.html" class="block py-2.5 px-4 rounded hover:bg-gray-700">
+                    Students
+                </a>
+                <a href="Pages/teachers.html" class="block py-2.5 px-4 rounded hover:bg-gray-700">
+                    Teachers
+                </a>
+                <a href="Pages/Pending-Payments.html" class="block py-2.5 px-4 rounded hover:bg-gray-700">
+                    Pending Payments
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main content -->
+        <div class="flex-1 p-10">
+            <h1 class="text-3xl font-bold mb-6">Dashboard</h1>
+            <div class="grid grid-cols-3 gap-6">
+                <!-- Cards for quick stats -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold">Total Students</h2>
+                    <p class="mt-4 text-2xl">120</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold">Total Teachers</h2>
+                    <p class="mt-4 text-2xl">30</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold">Classes Scheduled</h2>
+                    <p class="mt-4 text-2xl">45</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
